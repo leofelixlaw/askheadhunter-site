@@ -1,0 +1,62 @@
+//_theme.scss 
+.pricing{
+  color: #000;
+  .card-title{
+    font-size: 1.5625rem;
+    margin-top: 1rem;
+  }
+  .card-text{
+  }
+  .btn{
+    text-transform: uppercase;
+    border-color: $theme;
+    color: $theme;
+    font-weight: 700;
+    &:hover, &:focus, &.active{
+      background-color: $theme !important;
+      border-color: $theme !important;
+      color: $white;
+      outline: none;
+      box-shadow: none !important;
+    }
+  }
+  sup{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .price{
+    font-size: 1.875rem;
+    color: $theme;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .card{
+    border-color: #EEEEF0;
+    text-align: center;
+    &.active{
+      box-shadow: 0 -8px 0 $theme;
+      border-radius: 3px !important;
+    }
+  }
+  hr{
+    margin: 1.5rem 0;
+  }
+  ul{
+    text-align: left;
+    li{
+      margin-top: 15px;
+      position: relative;
+      padding-right: 20px;
+      .icon-info{
+        position: absolute;
+        top: 5px;
+        right: 0;
+        cursor: pointer;
+      }
+    }
+  }
+  @include media-breakpoint-up(md) {
+    padding: 0 10%;
+  }
+}

@@ -1,0 +1,19 @@
+//_mytheme.scss
+
+$theme-colors: (
+    "primary": #FCBC08,
+    "secondary": #000000
+);
+
+$white: #ffffff;
+$black: #000000;
+
+$theme: #FCBC08;
+
+$primary: map-get($theme-colors, primary);
+$secondary: map-get($theme-colors, secondary);
+
+/*Header Colors*/
+$header-color: #808080;
+$font-color: #6C6C6C;
+$title-color: #303030;

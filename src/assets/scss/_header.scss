@@ -1,0 +1,59 @@
+//_theme.scss 
+.main-logo {
+  height: 60px;
+}
+
+.navbar {
+  background-color: $white;
+  padding: 0;
+
+  .navbar-toggler {
+    margin-right: 10px;
+    outline: none;
+    border: 0;
+  }
+  .navbar-collapse{
+
+    @include media-breakpoint-down(sm) {
+      position: absolute;
+      top: 60px;
+      background: rgba(white, 0.87);
+      width: 100%;
+    }
+  }
+  .navbar-brand {
+    background-color: $theme;
+    padding: 0 5px;
+  }
+  .nav-item {
+    a{
+      color: $header-color;
+      &:hover{
+        color: $theme;
+      }
+      &.active{
+        color: $theme;
+      }
+    }
+  }
+
+  .header-btn {
+    margin-left: 15px;
+    margin-bottom: 20px;
+
+    @include media-breakpoint-up(md) {
+      margin-left: 0;
+      margin-bottom: 0;
+      margin-right: 70px;
+    }
+  } 
+  @include media-breakpoint-down(sm) {
+    .nav-item {
+      padding: 0 15px;
+    }
+
+    .navbar-nav {
+      padding: 15px 0;
+    }
+  }
+}

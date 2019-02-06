@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-md">
+  <a class="navbar-brand" href="#">
+    <img src="../../assets/images/logo.png" class="main-logo" alt="logo">
+  </a>
+  <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed">
+    <span class="svg svg-menu"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" [collapse]="isCollapsed">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#?">Jobseeker</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/employer" [routerLinkActive]="'active'">Employer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/student">Student</a>
+      </li>
+    </ul>
+    <a href="#?" class="btn btn-primary header-btn">Login/Sign Up</a>
+  </div>
+</nav>
