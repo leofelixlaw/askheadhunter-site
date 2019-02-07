@@ -24,6 +24,7 @@
   .navbar-brand {
     background-color: $theme;
     padding: 0 5px;
+    margin-right: 2rem;
   }
   .nav-item {
     a{
@@ -31,7 +32,10 @@
       &:hover{
         color: $theme;
       }
-      &.active{
+    }
+    
+    &.active{
+      a{
         color: $theme;
       }
     }
